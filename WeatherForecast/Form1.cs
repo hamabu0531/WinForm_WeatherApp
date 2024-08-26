@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Net.Http;
@@ -12,6 +13,7 @@ namespace WeatherForecast
     {
         private const string BaseUrl = "https://api.aoikujira.com/tenki/week.php?fmt=json";
         JObject[] data = new JObject[8]; // 1週間分
+        JObject jobj; // 全体のJObject
         public Form1()
         {
             InitializeComponent();
@@ -24,7 +26,7 @@ namespace WeatherForecast
         private void GetWeather()
         {
             string json = new HttpClient().GetStringAsync(BaseUrl).Result;
-            JObject jobj = JObject.Parse(json);
+            jobj = JObject.Parse(json);
             if(jobj[locationTextBox.Text] == null)
             {
                 MessageBox.Show("別の地点を入力してください");
@@ -58,14 +60,6 @@ namespace WeatherForecast
             windsLabel.Text = (string)(data[day]["winds"]);
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void reloadButton_Click(object sender, EventArgs e)
         {
@@ -119,6 +113,18 @@ namespace WeatherForecast
         {
             GetWeather();
             SetWeather(7);
+        }
+
+        private void locationListButton_Click(object sender, EventArgs e)
+        {
+            IEnumerable<string> keys = jobj.Properties().Select(p => p.Name).Skip(1);
+            /* string locations = "";
+            foreach (string key in keys)
+            {
+                locations += key + "\n";
+            } と同じ */
+            string locations = string.Join("\n", keys);
+            MessageBox.Show(locations, "有効な地点一覧");
         }
     }
 }

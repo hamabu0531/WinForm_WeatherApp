@@ -32,7 +32,7 @@ namespace WeatherForecast
                 MessageBox.Show("別の地点を入力してください");
                 return;
             }
-            for (int i = 0; i < 8; i++)
+            for (int i = 0; i < 7; i++)
             {
                 data[i] = (jobj[locationTextBox.Text][i] as JObject);
                 locationLabel.Text = locationTextBox.Text;
@@ -42,22 +42,28 @@ namespace WeatherForecast
         private void SetWeather(int day)
         {
             // Today
-            weatherLabel.Text = (string)(data[day]["forecast"]);
-            wavesLabel.Text = (string)(data[day]["waves"]);
-            string maxTemp = (string)(data[day]["maxtemp"]);
-            string minTemp = (string)(data[day]["mintemp"]);
-            tempRichText.Text = "\n" + maxTemp + " ℃" + " / " + minTemp + " ℃";
-            tempRichText.Select(1, maxTemp.Length+1);
-            tempRichText.SelectionColor = Color.Red;
-            tempRichText.Select(maxTemp.Length + 6, minTemp.Length);
-            tempRichText.SelectionColor = Color.Blue;
-            tempRichText.SelectAll();
-            tempRichText.SelectionAlignment = HorizontalAlignment.Center; // 中央揃え
-            tempRichText.Padding = new Padding(0, 100, 0, 0);
-            tempRichText.Select(0, 0);
-            //TempLabel.Text = (string)(data[day]["maxtemp"]) + " ℃" + " / " + (string)(data[day]["mintemp"]) + " ℃";
-            dateLabel.Text = (string)(data[day]["date"]) ;
-            windsLabel.Text = (string)(data[day]["winds"]);
+            if (data[day] != null)
+            {
+                weatherLabel.Text = (string)(data[day]["forecast"]);
+                wavesLabel.Text = (string)(data[day]["waves"]);
+                string maxTemp = (string)(data[day]["maxtemp"]);
+                string minTemp = (string)(data[day]["mintemp"]);
+                tempRichText.Text = "\n" + maxTemp + " ℃" + " / " + minTemp + " ℃";
+                tempRichText.Select(1, maxTemp.Length + 1);
+                tempRichText.SelectionColor = Color.Red;
+                tempRichText.Select(maxTemp.Length + 6, minTemp.Length);
+                tempRichText.SelectionColor = Color.Blue;
+                tempRichText.SelectAll();
+                tempRichText.SelectionAlignment = HorizontalAlignment.Center; // 中央揃え
+                tempRichText.Padding = new Padding(0, 100, 0, 0);
+                tempRichText.Select(0, 0);
+                dateLabel.Text = (string)(data[day]["date"]);
+                windsLabel.Text = (string)(data[day]["winds"]);
+            }
+            else
+            {
+                MessageBox.Show("データがありません", "Data not found", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
 

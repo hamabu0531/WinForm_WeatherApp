@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\hamab\\source\\repos\\CSharp\\WinForm_WeatherApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{55789BBE-0503-49AE-906E-1263FA564E07}|WeatherForecast\\WeatherForecast.csproj|C:\\Users\\hamab\\source\\repos\\CSharp\\WinForm_WeatherApp\\weatherforecast\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{55789BBE-0503-49AE-906E-1263FA564E07}|WeatherForecast\\WeatherForecast.csproj|c:\\users\\hamab\\source\\repos\\csharp\\winform_weatherapp\\weatherforecast\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55789BBE-0503-49AE-906E-1263FA564E07}|WeatherForecast\\WeatherForecast.csproj|solutionrelative:weatherforecast\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55789BBE-0503-49AE-906E-1263FA564E07}|WeatherForecast\\WeatherForecast.csproj|c:\\users\\hamab\\source\\repos\\csharp\\winform_weatherapp\\weatherforecast\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{55789BBE-0503-49AE-906E-1263FA564E07}|WeatherForecast\\WeatherForecast.csproj|C:\\Users\\hamab\\source\\repos\\CSharp\\WinForm_WeatherApp\\weatherforecast\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{55789BBE-0503-49AE-906E-1263FA564E07}|WeatherForecast\\WeatherForecast.csproj|solutionrelative:weatherforecast\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -34,8 +34,7 @@
               "RelativeToolTip": "WeatherForecast\\Form1.Designer.cs",
               "ViewState": "AgIAAGEAAAAAAAAAAAArwHUAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T14:44:04.926Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-26T14:44:04.926Z"
             },
             {
               "$type": "Document",
@@ -59,8 +58,7 @@
               "ToolTip": "C:\\Users\\hamab\\source\\repos\\CSharp\\WinForm_WeatherApp\\WeatherForecast\\Form1.cs [\u30C7\u30B6\u30A4\u30F3]",
               "RelativeToolTip": "WeatherForecast\\Form1.cs [\u30C7\u30B6\u30A4\u30F3]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T06:38:29.887Z",
-              "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
+              "WhenOpened": "2024-08-25T06:38:29.887Z"
             }
           ]
         }

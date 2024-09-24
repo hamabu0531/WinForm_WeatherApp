@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\hamab\\source\\repos\\CSharp\\WinForm_WeatherApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{55789BBE-0503-49AE-906E-1263FA564E07}|WeatherForecast\\WeatherForecast.csproj|c:\\users\\hamab\\source\\repos\\csharp\\winform_weatherapp\\weatherforecast\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55789BBE-0503-49AE-906E-1263FA564E07}|WeatherForecast\\WeatherForecast.csproj|solutionrelative:weatherforecast\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{55789BBE-0503-49AE-906E-1263FA564E07}|WeatherForecast\\WeatherForecast.csproj|C:\\Users\\hamab\\source\\repos\\CSharp\\WinForm_WeatherApp\\weatherforecast\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{55789BBE-0503-49AE-906E-1263FA564E07}|WeatherForecast\\WeatherForecast.csproj|solutionrelative:weatherforecast\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55789BBE-0503-49AE-906E-1263FA564E07}|WeatherForecast\\WeatherForecast.csproj|c:\\users\\hamab\\source\\repos\\csharp\\winform_weatherapp\\weatherforecast\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55789BBE-0503-49AE-906E-1263FA564E07}|WeatherForecast\\WeatherForecast.csproj|solutionrelative:weatherforecast\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55789BBE-0503-49AE-906E-1263FA564E07}|WeatherForecast\\WeatherForecast.csproj|C:\\Users\\hamab\\source\\repos\\CSharp\\WinForm_WeatherApp\\weatherforecast\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -32,33 +32,35 @@
               "RelativeDocumentMoniker": "WeatherForecast\\Form1.Designer.cs",
               "ToolTip": "C:\\Users\\hamab\\source\\repos\\CSharp\\WinForm_WeatherApp\\WeatherForecast\\Form1.Designer.cs",
               "RelativeToolTip": "WeatherForecast\\Form1.Designer.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAArwHUAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T14:44:04.926Z"
+              "WhenOpened": "2024-08-26T14:44:04.926Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\hamab\\source\\repos\\CSharp\\WinForm_WeatherApp\\WeatherForecast\\Form1.cs",
               "RelativeDocumentMoniker": "WeatherForecast\\Form1.cs",
               "ToolTip": "C:\\Users\\hamab\\source\\repos\\CSharp\\WinForm_WeatherApp\\WeatherForecast\\Form1.cs",
               "RelativeToolTip": "WeatherForecast\\Form1.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAIwDoAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-25T06:43:22.979Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [\u30C7\u30B6\u30A4\u30F3]",
               "DocumentMoniker": "C:\\Users\\hamab\\source\\repos\\CSharp\\WinForm_WeatherApp\\WeatherForecast\\Form1.cs",
               "RelativeDocumentMoniker": "WeatherForecast\\Form1.cs",
               "ToolTip": "C:\\Users\\hamab\\source\\repos\\CSharp\\WinForm_WeatherApp\\WeatherForecast\\Form1.cs [\u30C7\u30B6\u30A4\u30F3]",
               "RelativeToolTip": "WeatherForecast\\Form1.cs [\u30C7\u30B6\u30A4\u30F3]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T06:38:29.887Z"
+              "WhenOpened": "2024-08-25T06:38:29.887Z",
+              "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
             }
           ]
         }

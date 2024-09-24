@@ -37,7 +37,7 @@ namespace WeatherForecast
                 data[i] = (jobj[locationTextBox.Text][i] as JObject);
                 locationLabel.Text = locationTextBox.Text;
             }
-           
+            titleLabel.Paint -= new PaintEventHandler(SetPicture);
         }
         private void SetWeather(int day)
         {
@@ -59,6 +59,8 @@ namespace WeatherForecast
                 tempRichText.Select(0, 0);
                 dateLabel.Text = (string)(data[day]["date"]);
                 windsLabel.Text = (string)(data[day]["winds"]);
+                titleLabel.Paint += new PaintEventHandler(SetPicture); //背景画像の設定
+                titleLabel.Invalidate();
             }
             else
             {
@@ -131,6 +133,28 @@ namespace WeatherForecast
             } と同じ */
             string locations = string.Join("\n", keys);
             MessageBox.Show(locations, "有効な地点一覧");
+        }
+
+        private void SetPicture(object sender, PaintEventArgs e)
+        {
+            string weather = weatherLabel.Text;
+            Image weatherImage = Image.FromFile("../../Images/sunny.jpg");
+            if (weather.Contains("晴"))
+            {
+                // MessageBox.Show("テスト晴");
+                weatherImage = Image.FromFile("../../Images/sunny.jpg");
+            }
+            else if (weather.Contains("雨"))
+            {
+                // MessageBox.Show("テスト雨");
+                weatherImage = Image.FromFile("../../Images/rainy.jpg");
+            }
+            else if (weather.Contains("曇"))
+            {
+                // MessageBox.Show("テスト曇");
+                weatherImage = Image.FromFile("../../Images/cloudy.jpg");
+            }
+            e.Graphics.DrawImage(weatherImage, new Rectangle(0, 0, titleLabel.Width, titleLabel.Height));
         }
     }
 }

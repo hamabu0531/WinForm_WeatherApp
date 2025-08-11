@@ -343,6 +343,7 @@
             this.tempRichText.Location = new System.Drawing.Point(440, 144);
             this.tempRichText.Margin = new System.Windows.Forms.Padding(2);
             this.tempRichText.Name = "tempRichText";
+            this.tempRichText.ReadOnly = true;
             this.tempRichText.Size = new System.Drawing.Size(144, 67);
             this.tempRichText.TabIndex = 15;
             this.tempRichText.Text = "\n    x ℃ / y ℃";
